@@ -5,7 +5,9 @@ export default function StickyCTA() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 pointer-events-none">
       <motion.a
-        href="#"
+        href="https://pay.voompcreators.com.br/5372"
+        target="_blank"
+        rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         whileHover={{ scale: 1.05 }}

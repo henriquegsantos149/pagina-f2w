@@ -31,8 +31,9 @@ export default function CallToAction() {
           
           <div className="relative z-10 space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:gap-6">
             <a 
-              href="#" 
-              aria-label="Inscreva-se agora na Formação 2W"
+              href="https://pay.voompcreators.com.br/5372" 
+              target="_blank"
+              rel="noopener noreferrer"              aria-label="Inscreva-se agora na Formação 2W"
               className="shape-leaf group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-lg overflow-hidden transition-all hover:scale-105 active:scale-95 w-full sm:w-auto shadow-[0_0_30px_rgba(109,166,155,0.4)] hover:shadow-[0_0_40px_rgba(109,166,155,0.6)]"
             >
               <span className="relative z-10 flex items-center gap-2 uppercase tracking-wide font-primary">
