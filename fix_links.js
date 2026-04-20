@@ -1,0 +1,1 @@
+const fs = require('fs'); const files = ['src/components/CallToAction.tsx', 'src/components/Hero.tsx', 'src/components/Header.tsx', 'src/components/StickyCTA.tsx']; files.forEach(f => { let c = fs.readFileSync(f, 'utf8'); c = c.split('href=\

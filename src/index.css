@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0D0D0D;
+  --color-brand-light: #F2F2F2;
+  --color-brand-green1: #6DA69B;
+  --color-brand-green2: #80BFAD;
+  --color-brand-blue: #467373;
+  
+  /* Aliases for ALPA compatibility */
+  --color-brand-primary: var(--color-brand-green1);
+  --color-brand-secondary: var(--color-brand-green2);
+  --color-brand-accent: var(--color-brand-blue);
+  
+  --font-primary: 'Outfit', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+  --font-impact: 'Bebas Neue', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-dark);
+    color: var(--color-brand-light);
+    font-family: var(--font-secondary);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+  }
+}
+
+@layer utilities {
+  .shape-leaf {
+    border-radius: 24px 0px 24px 0px;
+  }
+  .shape-leaf-inverse {
+    border-radius: 0px 24px 0px 24px;
+  }
+  
+  .bg-brand-gradient {
+    background: linear-gradient(90deg, var(--color-brand-green1), var(--color-brand-green2), var(--color-brand-blue));
+  }
+  
+  .text-brand-gradient {
+    background: linear-gradient(90deg, var(--color-brand-green1), var(--color-brand-green2), var(--color-brand-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.bg-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(128, 191, 173, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(109, 166, 155, 0.08) 1px, transparent 1px);
+  position: absolute;
+  inset: 0;
+}
+
+
+
