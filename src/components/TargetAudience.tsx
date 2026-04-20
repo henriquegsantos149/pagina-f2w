@@ -18,9 +18,7 @@ export default function TargetAudience() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 font-primary uppercase tracking-wide">
             Para <span className="text-brand-gradient">Quem é</span> o Curso?
           </h2>
-          <p className="text-[var(--color-brand-light)]/70 text-lg font-secondary mb-10 leading-relaxed">
-            Este curso fala com três perfis principais que desejam aprender a construir sistemas de mapas profissionais utilizando aplicações reais e IA, rompendo a barreira técnica da programação tradicional.
-          </p>
+
 
           <div className="space-y-4">
             {profiles.map((profile, i) => (
