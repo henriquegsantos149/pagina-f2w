@@ -43,8 +43,7 @@ export default function LeadCaptureModal({ isOpen, onClose, checkoutUrl }: LeadC
         },
         body: JSON.stringify({
           ...formData,
-          course: 'f2w',
-          timestamp: new Date().toISOString()
+          course: 'f2w'
         }),
       });
 
