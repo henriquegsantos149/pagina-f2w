@@ -66,7 +66,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <a href="https://pay.voompcreators.com.br/5372" target="_blank" rel="noopener noreferrer" aria-label="Inscreva-se agora na Formação 2W" className="shape-leaf group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(109,166,155,0.3)] hover:shadow-[0_0_35px_rgba(109,166,155,0.5)]">
+          <a href="https://pay.voompcreators.com.br/5372/?cupom=F2WOFF50" target="_blank" rel="noopener noreferrer" aria-label="Inscreva-se agora na Formação 2W" className="shape-leaf group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-gradient text-[var(--color-brand-dark)] font-bold text-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_25px_rgba(109,166,155,0.3)] hover:shadow-[0_0_35px_rgba(109,166,155,0.5)]">
             <span className="relative z-10 transition-colors uppercase tracking-wider font-primary">Inscreva-se Agora</span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
           </a>
