@@ -34,24 +34,24 @@ export default function LeadCaptureModal({ isOpen, onClose, checkoutUrl }: LeadC
       // NOTE: Replace this URL with your Google Apps Script Webhook URL
       const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyn6jedHtgyEzRVq1l1AjqB6wBAG8pVh6niLEyOd8ttRSLrCj7vcH0idK8LI6Zbgh5Arg/exec';
       
-      await fetch(WEBHOOK_URL, {
+      fetch(WEBHOOK_URL, {
         method: 'POST',
         mode: 'no-cors',
+        keepalive: true,
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           ...formData,
           course: 'f2w',
-          timestamp: new Date().toISOString(),
-          source: window.location.href
+          timestamp: new Date().toISOString()
         }),
       });
 
-      // Redirect after a small delay
+      // Redirect almost immediately to feel faster
       setTimeout(() => {
         window.location.href = checkoutUrl;
-      }, 500);
+      }, 50);
 
     } catch (error) {
       console.error('Error submitting form:', error);
