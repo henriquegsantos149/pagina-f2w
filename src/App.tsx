@@ -1,3 +1,4 @@
+import BlackFridayNotice from './components/BlackFridayNotice'
 import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <main className="w-full min-h-screen bg-[var(--color-brand-dark)] text-[var(--color-brand-light)] font-secondary selection:bg-[var(--color-brand-primary)] selection:text-[var(--color-brand-dark)] relative">
+      <BlackFridayNotice />
       <Header />
       <Hero onOpenModal={openModal} />
       <ProblemObjective />
